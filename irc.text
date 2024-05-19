@@ -96,8 +96,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "IP-\u003e Your IP address",
-        "IP-\u003e Main"
+        "Gr 🇩🇪 s1",
+        "Gr 🇩🇪 s2"
       ],
       "default": "auto"
     },
@@ -105,15 +105,15 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "IP-\u003e Your IP address",
-        "IP-\u003e Main"
+        "Gr 🇩🇪 s1",
+        "Gr 🇩🇪 s2"
       ],
       "url": "http://cp.cloudflare.com/",
       "interval": "10m0s"
     },
     {
       "type": "wireguard",
-      "tag": "Hiddify Warp ✅",
+      "tag": "🇩🇪",
       "detour": "direct",
       "local_address": [
         "172.16.0.2/24",
@@ -131,8 +131,8 @@
     },
     {
       "type": "wireguard",
-      "tag": "IP-\u003e Your IP address",
-      "detour": "Hiddify Warp ✅",
+      "tag": "Gr 🇩🇪 s1",
+      "detour": "🇩🇪",
       "local_address": [
         "172.16.0.2/32",
         "2606:4700:110:86ca:ec6f:8dde:ba3f:c1d8/128"
@@ -147,8 +147,8 @@
     },
     {
       "type": "wireguard",
-      "tag": "IP-\u003e Main",
-      "detour": "IP-\u003e Your IP address",
+      "tag": "Gr 🇩🇪 s2",
+      "detour": "Gr 🇩🇪 s1",
       "local_address": [
         "172.16.0.2/32",
         "2606:4700:110:825a:ac82:d1:9917:773b/128"
