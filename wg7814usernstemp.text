@@ -96,8 +96,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇩🇪1",
-        "🇩🇪2"
+        "🇩🇪 1",
+        "🇩🇪 2"
       ],
       "default": "auto"
     },
@@ -105,15 +105,15 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇩🇪1",
-        "🇩🇪2"
+        "🇩🇪 1",
+        "🇩🇪 2"
       ],
       "url": "http://cp.cloudflare.com/",
       "interval": "10m0s"
     },
     {
       "type": "wireguard",
-      "tag": "🇩🇪",
+      "tag": "germany 🇩🇪",
       "detour": "direct",
       "local_address": [
         "172.16.0.2/24",
@@ -131,8 +131,8 @@
     },
     {
       "type": "wireguard",
-      "tag": "🇩🇪1",
-      "detour": "🇩🇪✅",
+      "tag": "🇩🇪 1",
+      "detour": "germany 🇩🇪",
       "local_address": [
         "172.16.0.2/32",
         "2606:4700:110:8f16:ed5d:a5da:6059:3a80/128"
@@ -147,8 +147,8 @@
     },
     {
       "type": "wireguard",
-      "tag": "🇩🇪2",
-      "detour": "🇩🇪1",
+      "tag": "🇩🇪 2",
+      "detour": "🇩🇪 1",
       "local_address": [
         "172.16.0.2/32",
         "2606:4700:110:8c95:d0bb:b8d7:d20c:5134/128"
